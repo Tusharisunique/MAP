@@ -8,20 +8,10 @@ const PORT = process.env.PORT || 5001;
 
 // Allow requests from any origin in production, or localhost in development
 const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? ['https://mapp-9tdq778b2-trytusharjoshi-gmailcoms-projects.vercel.app'] // Your actual Vercel URL
+  ? ['https://mapp-n9czf0taz-trytusharjoshi-gmailcoms-projects.vercel.app'] // Your current Vercel URL
   : ['http://localhost:3000'];
 
-app.use(cors({ 
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-}));
+app.use(cors());
 app.use(express.json());
 
 // Use the career routes
