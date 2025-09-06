@@ -1,0 +1,26 @@
+/map-career-trajectory
+│
+├── /client
+│   ├── /public
+│   ├── /src
+│   │   ├── /components
+│   │   ├── /pages
+│   │   ├── /styles
+│   │   ├── /utils
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+│   └── README.md
+│
+├── /server
+│   ├── /config
+│   ├── /controllers
+│   ├── /middleware
+│   ├── /models
+│   ├── /routes
+│   ├── /utils
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
