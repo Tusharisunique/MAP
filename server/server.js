@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5001;
 
 // Allow requests from any origin in production, or localhost in development
 const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? ['https://your-frontend-domain.vercel.app'] // We'll update this after deployment
+  ? ['https://mapp-9tdq778b2-trytusharjoshi-gmailcoms-projects.vercel.app'] // Your actual Vercel URL
   : ['http://localhost:3000'];
 
 app.use(cors({ 
