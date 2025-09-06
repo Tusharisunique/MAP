@@ -43,7 +43,7 @@ exports.generateCareerTrajectory = async (req, res) => {
       ]
     };
 
-    res.json({ advice: JSON.stringify(mockAdvice) });
+    res.json({ advice: mockAdvice });
   } catch (error) {
     console.error("Error in generateCareerTrajectory:", error);
     res
